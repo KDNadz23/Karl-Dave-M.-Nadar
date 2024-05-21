@@ -1,0 +1,124 @@
+#banner {
+    min-height: 100vh;
+    background: linear-gradient(to right, hsla(0, 2%, 17%, 0.856), rgba(44, 42, 42, 0.315)), url('https://images.squarespace-cdn.com/content/v1/60146ec5ca0b337ce6a69312/131df8be-46ff-426f-9d93-723afe05a95a/dtp_roxy2019_186.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+section{
+    padding-top: 100px;
+    padding-bottom: 100px;
+    text-align: justify;
+}
+.secret {
+    font-style: italic;
+    color: whitesmoke;
+}
+
+.btn {
+    padding: 15px 30px;
+    transition: all 0.4s ease;
+    font-weight: 800;
+    border-radius: 3;
+}
+
+.btn-brand {
+    background-color:honeydew ;
+}
+
+.btn-brand:hover {
+    background-color: transparent;
+    color:rgb(7, 10, 8);
+    border-color:lightskyblue;
+}
+
+.text {
+    color: black;
+}
+
+#about {
+    min-height: 100vh;
+    background: hsla(144, 32%, 66%, 0.4);
+    background-size: cover;
+}
+
+#services {
+    min-height: 100vh;
+    background: rgb(24, 23, 23);
+    background-size: cover;
+}
+
+.icon-img-box {
+    width: 40%;
+}
+
+
+.card {
+    transition: background-color 0.3s, 0.3s;
+    min-height: 30px;
+}
+
+.card:hover {
+    background-color: #1c3172;
+}
+
+.card:hover .card-title,
+.card:hover .card-text,
+.card:hover .btn {
+    color: #f3f3f3
+}
+
+.btn-outlined-brand {
+    color: grey;
+    background-color: transparent;
+    border-color: rgb(0, 0, 0);
+}
+
+.btn-outlined-brand:hover {
+    background-color: var(--p);
+}
+
+.display-2 {
+    font-family: 'Courier New', Courier, monospace;
+
+}
+
+.food {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+#cta {
+    min-height: 70vh;
+    background: linear-gradient(to right, hsla(0, 2%, 17%, 0.856), rgba(44, 42, 42, 0.315)), url('https://images.squarespace-cdn.com/content/v1/60146ec5ca0b337ce6a69312/131df8be-46ff-426f-9d93-723afe05a95a/dtp_roxy2019_186.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.testimonial {
+    background-color: var(--bg1);
+    padding: 15px 30px;
+}
+
+.testimonial img {
+    width: 65px;
+    border-radius: 100px;
+    height: 65px;
+}
+
+
+:root {
+    --bg1: #2d2a2b;
+    --bg2: rgb(44, 42,42);
+    --body: rgb(95, 86, 86);
+    --brand: #f2b03b;
+    --white: rgb(235, 235, 235);
+    --p: rgb(161, 150, 150);
+}
+
+#Reviews {
+    min-height: 100vh;
+    background: silver;
+    background-size: cover;
+}
