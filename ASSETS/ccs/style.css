@@ -1,92 +1,150 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+:root {
+    --section-background: #d3d3d3;
+    --font-white: #dddddd;
+    --font-black: #262626;
+    --font-blue: #3184e3;
+    --p-fs: .75rem;
+    --heading-fs: 1.5rem;
+}
+
+/* Reset */
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+/* By Group */
+.span-heading {
+    color: var(--font-blue);
+}
+.heading, .desc {
+    color: var(--font-white);
+}
+.heading-2 {
+    color: var(--font-black);
+}
+.btn {
+    padding: .625rem 1.5625rem;
+    transition: all 300ms ease-in-out;
+    font-weight: 800;
+    border-radius: 7px;
+}
+
+/* Buttons  */
+
+.btn-brand, .btn-service, .services-btn, .btn-contact {
+    position: relative;
+    border: 2px solid #99cff3;
+}
+
+.btn-brand:hover, .btn-service:hover, .services-btn:hover, .btn-contact:hover {
+    background: linear-gradient(to right, #99cff3, #99cff3);
+    color: var(--font-black);
+}
+.btn-service, .btn-brand {
+    color: var(--font-white);
+}
+.services-btn {
+    color: var(--font-black);
+}
+
+/* Start Navigation Bar */
+.navbar {
+    border-radius: 10px;
+    background-color: #d8d8d8;
+    color: var(--font-black);
+    width: 90dvw;
+    box-shadow: 1px 1px 4px #b9b9b9;
+}
+
+.nav-item {
+    position: relative;
+    /* border: 1px solid black; */
+    margin: 0 5px;
+    padding: 0 10px;
+}
+.nav-item::before {
+    position: absolute;
+    content: '';
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background-color: var(--font-blue);
+    transition: width 300ms ease-in-out;
+}
+.nav-item:hover::before {
+    width: 100%;
+}
+/* End Navigation Bar */
+
+/* Start Banner Section */
 #banner {
     min-height: 100vh;
-    background: url("https://images.squarespace-cdn.com/content/v1/60146ec5ca0b337ce6a69312/131df8be-46ff-426f-9d93-723afe05a95a/dtp_roxy2019_186.jpg");
+    background: linear-gradient(to right, hsla(0, 2%, 17%, 0.901), rgba(44, 42, 42, 0.732)), url('https://images.squarespace-cdn.com/content/v1/60146ec5ca0b337ce6a69312/131df8be-46ff-426f-9d93-723afe05a95a/dtp_roxy2019_186.jpg');
     background-size: cover;
     background-attachment: fixed;
 }
 
-section{
-    padding-top: 100px;
-    padding-bottom: 100px;
-    text-align: justify;
-}
 .secret {
     font-style: italic;
     color: whitesmoke;
 }
+/* End Banner Section */
 
-.btn {
-    padding: 15px 30px;
-    transition: all 0.4s ease;
-    font-weight: 800;
-    border-radius: 3;
-}
 
-.btn-brand {
-    background-color:honeydew ;
-}
-
-.btn-brand:hover {
-    background-color: transparent;
-    color:rgb(7, 10, 8);
-    border-color:lightskyblue;
-}
-
-.text {
-    color: black;
-}
-
+/* Start About Section */
 #about {
     min-height: 100vh;
-    background: hsla(144, 32%, 66%, 0.4);
+    background: #242424;
     background-size: cover;
+    color: #e1e1e1;
+    padding: 3.125rem;
 }
 
+.abt-img {
+    border: 10px solid rgb(62, 62, 62);
+}
+/* End Banner Section */
+
+
+/* Start Services Section */
 #services {
-    min-height: 100vh;
-    background: rgb(24, 23, 23);
-    background-size: cover;
+    min-height: 100dvh;
+    padding: 8rem 0;
+    background-color: var(--section-background);
+    border: 1px solid black;
 }
 
 .icon-img-box {
     width: 40%;
 }
 
-
+.card-container {
+    height: 75  dvh;
+}
 .card {
+    max-width: 28%;
+    min-width: 300px;
+    min-height: 100%;
     transition: background-color 0.3s, 0.3s;
-    min-height: 30px;
 }
 
 .card:hover {
-    background-color: #1c3172;
+    box-shadow: 0 2px 20px rgb(83, 83, 83);
 }
-
-.card:hover .card-title,
-.card:hover .card-text,
-.card:hover .btn {
-    color: #f3f3f3
+.card-text {
+    min-height: 20dvh;
 }
+ /* End Services Section */
 
-.btn-outlined-brand {
-    color: grey;
-    background-color: transparent;
-    border-color: rgb(0, 0, 0);
-}
 
-.btn-outlined-brand:hover {
-    background-color: var(--p);
-}
 
-.display-2 {
-    font-family: 'Courier New', Courier, monospace;
-
-}
-
-.food {
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-}
-
+/* Start Contacts */
 #cta {
     min-height: 70vh;
     background: linear-gradient(to right, hsla(0, 2%, 17%, 0.856), rgba(44, 42, 42, 0.315)), url('https://images.squarespace-cdn.com/content/v1/60146ec5ca0b337ce6a69312/131df8be-46ff-426f-9d93-723afe05a95a/dtp_roxy2019_186.jpg');
@@ -106,19 +164,69 @@ section{
     border-radius: 100px;
     height: 65px;
 }
+/* End Contacts */
 
-
-:root {
-    --bg1: #2d2a2b;
-    --bg2: rgb(44, 42,42);
-    --body: rgb(95, 86, 86);
-    --brand: #f2b03b;
-    --white: rgb(235, 235, 235);
-    --p: rgb(161, 150, 150);
-}
-
+/* Start Reviews */
 #Reviews {
     min-height: 100vh;
-    background: silver;
-    background-size: cover;
+    background: var(--section-background);
+    padding: 3.125rem 0;
 }
+.testimonial {
+    background-color: #fff;
+    border-radius: .625rem;
+    transition: all 300ms ease-in-out;
+}
+.testimonial:hover {
+    box-shadow: 0 2px 15px rgb(83, 83, 83);
+}
+.testimonial > div > div {
+    width: 100%;
+    line-height: 5px;
+}
+.testimonial > div > div > p > a {
+    color: var(--font-black);
+    text-decoration: none;
+}
+
+/* Start Faqs */
+#FAQS {
+    height: 100dvh;
+    padding: 6rem 0;
+    background-color: var(--section-background);
+}
+#faqAccordion {
+    width: 50dvw;
+}
+.accordion-item {
+    box-shadow: 0 2px 10px #535353;
+    border-radius: 5px;
+}
+/* End Faqs */
+
+
+/* Start Footer */
+#footer {
+    padding-top: 50px;
+    padding-bottom: 50px;
+    background-color: var(--font-black);
+}
+
+#footer ul.list-unstyled li a {
+    color: var(--white);
+}
+
+#footer ul.list-unstyled li:hover a {
+    color: var(--brand) ;
+}
+
+.btn-outline-light {
+    border-color: var(--bord) !important;
+    color: var(--brand);
+}
+
+#footer h5 {
+    color: var(--brand);
+    margin-bottom: 15px;
+}
+/* End Footer */
